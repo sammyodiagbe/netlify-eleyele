@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+}
+
+nav.navigation div.container {
+  display: block;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav.navigation a.brand-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+nav.navigation a.brand-name img.brand_logo {
+  width: 30px;
+  margin-right: 5px;
+}
+
+nav.navigation div.navigation-links {
+  display: none;
+}
+
+nav.navigation div.burger {
+  height: 20px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav.navigation div.burger div {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+}
+
+nav.navigation div.burger div:nth-child(2) {
+  width: 70%;
+}
+
+nav.navigation div.burger div:nth-child(3) {
+  width: 50%;
+}
+
+nav.navigation .desktop-links {
+  display: none;
+}
+
+nav.navigation div.mobile-navigation {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  padding: 20px;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+nav.navigation div.mobile-navigation.open {
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
+}
+
+nav.navigation div.mobile-navigation button.cls-btn {
+  position: fixed;
+  background: transparent;
+  font-weight: bold;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  color: red;
+  padding: 10px;
+}
+
+nav.navigation div.mobile-navigation ul li {
+  padding: 10px;
+}
+
+div.home div.head {
+  background: #2797ec;
+  padding: 20px 0;
+}
+
+div.home div.head header.banner {
+  padding: 0 20px;
+  padding-top: 100px;
+  color: #fff;
+}
+
+div.home div.head header.banner div.left h1 {
+  padding-bottom: 20px;
+}
+
+div.home div.head header.banner div.left p {
+  padding-bottom: 20px;
+}
+
+div.home div.head header.banner div.left a.send_message {
+  padding: 15px;
+  background: #21f31a;
+  color: #fff;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+div.home div.head header.banner div.left a.send_message:hover {
+  border: 1px solid #fff;
+}
+
+div.home div.head header.banner div.right {
+  padding: 20px 0;
+  margin-top: 20px;
+  background: #fff;
+  color: #444;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+div.home div.head header.banner div.right img {
+  width: 50px;
+}
+
+div.home div.head header.banner div.right h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.home div.head header.banner div.right h2 img {
+  margin-right: 20px;
+  width: 40px;
+}
+
+div.home div.head header.banner div.right div.happening-today div.content {
+  text-align: center;
+  padding: 10px 0;
+}
+
+div.home section.church-vision {
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+div.home section.church-vision h1 {
+  text-align: center;
+}
+
+div.home section.church-vision div.church-missions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.home section.church-vision div.church-missions div.a-mission {
+  text-align: center;
+  padding: 50px 0;
+}
+
+div.home section.church-vision div.church-missions div.a-mission img {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+div.home section.shepherd {
+  padding: 20px;
+  text-align: center;
+}
+
+div.home section.shepherd img {
+  width: 250px;
+  margin: 20px 0;
+}
+
+div.home section.upcoming-events {
+  padding: 20px;
+}
+
+div.home section.upcoming-events div.events-container {
+  padding: 20px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+div.home section.upcoming-events div.events-container div.event {
+  margin-bottom: 40px;
+}
+
+div.home section.upcoming-events div.events-container div.event img {
+  width: 100%;
+}
+
+div.home section.upcoming-events div.events-container div.event div.content {
+  text-align: center;
+}
+
+div.home section.contact div.left-image {
+  background: url(../assets/contact_bg.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.home section.contact div.left-image h1 {
+  width: 220px;
+  font-size: 30px;
+  color: white;
+}
+
+div.home section.contact div.form-container {
+  padding: 25px 20px;
+}
+
+div.home section.contact div.form-container h3 {
+  margin-bottom: 30px;
+}
+
+div.home section.contact div.form-container form div.input-container input,
+div.home section.contact div.form-container form div.input-container textarea {
+  padding: 25px 10px;
+  background: #f5f4f4;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+div.home section.contact div.form-container form button {
+  padding: 20px;
+  width: 100%;
+  background: #21f31a;
+  color: #444;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+div.home footer.footer {
+  min-height: 300px;
+  background: #363a3f;
+}
+
+section.happening-today {
+  background: #efefef;
+  padding: 20px;
+}
+
+section.happening-today aside.side-1 {
+  padding: 40px 0;
+  text-align: center;
+}
+
+section.happening-today aside.side-1 h1 {
+  padding-bottom: 15px;
+}
+
+section.happening-today aside.side-2 div.happening {
+  background: #2a73a9;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+section.happening-today aside.side-2 div.happening h3 {
+  padding-bottom: 15px;
+}
+
+section.weekly-events {
+  background: #2797ec;
+  color: #fff;
+  padding: 20px;
+}
+
+section.weekly-events div.events-container div.events div.event {
+  padding: 10px 0;
+}
+
+section.weekly-events div.events-container div.events div.event h4 {
+  padding-bottom: 10px;
+}
+
+section.weekly-events div.events-container div.events div.event div.sub-events {
+  min-height: 100px;
+}
+
+section.weekly-events div.events-container div.events div.event div.sub-events ul li {
+  padding: 15px 10px;
+  background: #fff;
+  color: #444;
+  font-size: 14px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+section.weekly-events div.events-container div.events div.event div.sub-events ul li span {
+  font-weight: bold;
+  background: #21f31a;
+  padding: 5px 10px;
+  color: #444;
+  font-size: 13px;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section.church-history {
+  padding: 20px;
+}
+
+section.church-history div.content aside.left p {
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+section.church-history div.content aside.left a.continue-reading {
+  padding: 10px 30px;
+  display: inline-block;
+  background: #21f31a;
+  color: #444;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+section.church-history div.content aside.right {
+  padding: 40px 0;
+}
+
+footer.footer {
+  padding: 20px;
+}
+
+footer.footer ul.navigation-link,
+footer.footer ul.socials,
+footer.footer ul {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer.footer ul.navigation-link li,
+footer.footer ul.socials li,
+footer.footer ul li {
+  padding: 5px 0;
+}
+
+footer.footer ul.navigation-link li a,
+footer.footer ul.socials li a,
+footer.footer ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+h1.title {
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+h1.title::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  border-radius: 5px;
+  background: #21f31a;
+  left: 0;
+  bottom: 0;
+}
+
+section.harvest {
+  padding: 20px;
+}
+
+section.harvest aside.section-left h1.head-text {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+section.harvest aside.section-left div.design h1.hephzibah {
+  color: #2a73a9;
+  font-size: 2.8em;
+  padding-bottom: 30px;
+}
+
+section.harvest aside.section-left div.design h1.hephzibah span.d {
+  font-size: 24px;
+  color: #c74d37;
+}
+
+section.harvest aside.section-left div.design div.bible-passage p {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+section.harvest aside.section-left div.design div.bible-passage h6 {
+  font-weight: bolder;
+  text-align: right;
+}
+
+section.harvest aside.section-right {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 930px) {
+  div.container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  nav.navigation div.container div.burger {
+    display: none;
+  }
+  nav.navigation div.container div.navigation-links {
+    display: block;
+  }
+  nav.navigation div.container div.navigation-links ul.desktop-links {
+    display: block;
+  }
+  nav.navigation div.container div.navigation-links ul.desktop-links li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  nav.navigation div.container div.navigation-links ul.desktop-links li a {
+    color: #fff;
+    font-size: 14px;
+  }
+  nav.navigation div.container div.navigation-links ul.desktop-links li a:hover {
+    font-weight: bold;
+  }
+  header.banner {
+    height: 400px;
+  }
+  header.banner div.left h1 {
+    width: 500px;
+  }
+  section.church-vision div.container div.church-missions {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  section.harvest {
+    background: #efefef;
+  }
+  section.harvest div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 20px;
+  }
+  section.church-history {
+    background: #efefef;
+  }
+  section.church-history div.container div.content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 20px;
+  }
+  section.weekly-events div.container div.events-container div.events {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  section.contact {
+    height: 500px;
+  }
+  section.contact div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  footer.footer div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=base.css.map */
